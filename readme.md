@@ -16,12 +16,12 @@
 
 ### ⚙ 팀 구성
 
-|         |      포지션      |                                     역할                                      |
-|:-------:|:-------------:|:---------------------------------------------------------------------------:|
-| **김덕진** |    FE, 팀장     |                    팀전/개인전 매칭, 게임 초대, 친구 신청, 채팅, 회원 정보 수정                    |
-| **박가희** |   FE, FE 리더   | 메인, 대전 기록, 팀전/개인전 IDE, 코드 제출 및 실행, 보너스 문제, 아이템, OpenVidu로 음성 공유, AI 코칭, 디자인 |
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|      포지션   |    역할      |
+|:----------------:|:-------------:|:------------------------------------:|
+| **김덕진** |    팀장<br>FE,  Infra     | 전체 일정 관리, 공통 모듈 개발, 팀전/개인전 매칭, 랭킹, 게임 결과 모달, 게임 초대, 친구 & 채팅 모달, 회원 정보           |
+| **박가희** |   FE, FE 리더   | 메인, 대전 기록, 팀전/개인전 IDE, 코드 제출 및 실행, 보너스 문제, 아이템, OpenVidu, AI 코칭, 디자인 |
 | **장희현** |      FE       |          로그인, 로그아웃, 디자인, 채팅 모달 일부, 공통 컴포넌트 제작, 에러 페이지, PPT, 영상 제작           |
-| **진우석** | FE, BE, BE 리더 |                회원, 코드 공유, 채점 서버 연동, 게임 결과 반환, 랭킹 페이지 조회 및 검색                |
+| **진우석** | BE 리더 Infra |                회원, 코드 공유, 채점 서버 연동, 게임 결과 반환                |
 | **김성찬** |      BE       |                친구 신청, 채팅, OpenVidu 서버 배포, 유저 검색, 팀전/개인전 나가기                 |
 | **김시아** |      BE       |               팀전/개인전 매칭, 게임 초대, 랭킹 데이터 처리 및 페이지 조회/검색 , S3 연동               |
 
@@ -185,7 +185,8 @@ https://www.erdcloud.com/d/4NDsDbCnsSfs4cGsh
 
 ---
 
-## 📄 PR Template
+<details> 
+<summary> <strong><font size="4"> 📄 PR Template </font></strong> </summary>
 
 ```declarative
 <!-- PR 메시지 : 🔀 [FE] merge: from feature/ to dev  -->
@@ -224,14 +225,29 @@ PR이 다음 요구 사항을 충족하는지 확인하세요.
 - [ ] 변경 사항에 대한 테스트를 했습니다.(버그 수정/기능에 대한 테스트).
 ```
 
-## ⚠️ Commit Convention
+</details> 
+<details> 
+<summary> <strong><font size="4"> ⚠️ Commit Convention </font></strong> </summary>
 
 ```declarative
-- feat : 새로운 기능 추가
-- fix : 버그 수정
-- docs : 문서 수정
-- style : 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우
-- refactor : 코드 리팩토링
-- test : 테스트 코드, 리펙토링 테스트 코드 추가
-- chore : 별도 업무 수정, 패키지 매니저 수정
+- ✨ feat : 새로운 기능 추가
+- 🚧 cont : 기능 및 코드 수정
+- ✅ update : 기능 및 코드 수정 완료
+- 🐛 fix : 버그 수정
+- 💄 style : 디자인 수정
+- ♻️ refactor : 코드 리팩토링
+- 🔀 merge : from XXXX to XXXX
+- 📝 docs : 문서 수정
+- 🔧 conf : config 파일 수정
+- ➕ add: 파일 추가
+- ➖ remove: 파일 제거
+- ✏️ typos : 오타 수정
+- ⚡️ performance : 성능 향상
+- 🍱 asset : 폴더 업데이트
+- 🏗️ structure : 프로젝트 구조 변경
+- 🚑 hotfix : 치명적인 버그 수정
+- 🎉 init : 프로젝트 개시
+- 🚀 deploy : 프로젝트 배포
 ```
+
+</details>
